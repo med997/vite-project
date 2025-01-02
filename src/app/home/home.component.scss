@@ -1,0 +1,22 @@
+.mining-container {
+  text-align: center;
+  padding: 10px;
+
+  .hash-rate {
+    font-size: 32px;
+    font-weight: bold;
+
+    margin: 10px 0;
+  }
+
+  .multiplier {
+    font-size: 18px;
+
+  }
+}
+.h4 {
+  overflow-wrap: break-word; /* Allows breaking words onto the next line */
+  word-wrap: break-word; /* Older syntax for compatibility */
+  word-break: break-all; /* Breaks words if necessary */
+  width: 50px; /* Set a specific width */
+}

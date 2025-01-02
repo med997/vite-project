@@ -1,0 +1,125 @@
+// Here you can add other styles
+@font-face {
+  font-family: 'Almarai';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('../../public/fonts/Almarai-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Almarai';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../../public/fonts/Almarai-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Almarai';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../../public/fonts/Almarai-Bold.ttf') format('truetype');
+}
+
+
+* {
+  font-family: 'Almarai', sans-serif !important;
+}
+
+.sidebar {
+  // Output .25rem
+  border-end-end-radius: 1rem;
+  border-start-end-radius: 1rem;
+  $border-radius-ltr: 2rem 0 0 2rem;
+  $border-radius-rtl: 0 2rem 2rem 0;
+  @include rtl {
+    --cui-sidebar-nav-link-border-radius: #{$border-radius-rtl}; // Value for RTL (right-to-left) direction
+
+  }
+  --cui-sidebar-nav-link-border-radius: #{$border-radius-ltr}; // Default value
+}
+
+.form-check-input:checked {
+
+  background-color: #30b85d;
+  border-color: var(--cui-form-check-input-checked-border-color, #30b85d);
+
+}
+
+.switch_chk {
+  @extend .form-check-input;
+  width: 2.30em;
+
+}
+
+
+.dropdown-item {
+  text-align: start;
+}
+
+.sidebar-brand {
+  // Output .25rem
+  border-start-end-radius: 1rem;
+}
+
+.sidebar-toggler {
+  // Output .25rem
+  border-end-end-radius: 1rem;
+
+}
+
+.form-label {
+  margin-bottom: 0.10rem;
+
+}
+
+.rounded-end {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+
+}
+
+.rounded-end-5 {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+
+}
+
+.rounded-start {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+
+}
+
+.rounded-start-5 {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+
+}
+
+[dir='rtl'] {
+  body {
+    direction: rtl;
+    text-align: start;
+    align-content: start;
+    align-items: start;
+    align-self: start;
+
+  }
+
+  // Add custom RTL styles for CoreUI components here
+}
+
+[dir='ltr'] {
+  body {
+    direction: ltr;
+    text-align: start;
+    align-content: start;
+    align-items: start;
+    align-self: start;
+  }
+
+  // Add custom LTR styles for CoreUI components here
+}

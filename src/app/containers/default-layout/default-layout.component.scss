@@ -1,0 +1,37 @@
+
+.sidebar {
+
+  //--cui-sidebar-nav-link-border-radius: #{$border-radius-ltr}; // Default value
+  --cui-sidebar-nav-group-items-padding-y: 0.2rem;
+  --cui-sidebar-nav-link-active-bg: #9F282DE2;
+  --cui-sidebar-nav-link-active-icon-color: #ffffff;
+  --cui-sidebar-nav-link-active-color: #ffffff;
+  --cui-sidebar-nav-link-color: #313131;
+  --cui-sidebar-nav-link-icon-color: #313131;
+  --cui-sidebar-nav-link-hover-bg: rgba(235, 237, 239, 1);
+  --cui-sidebar-nav-link-hover-icon-color: #313131;
+  --cui-sidebar-nav-link-hover-color: #313131;
+  --cui-sidebar-nav-group-toggle-show-color: #313131;
+  --cui-sidebar-nav-link-disabled-icon-color: #313131;
+  --cui-sidebar-nav-group-indicator-color: #313131;
+  --cui-sidebar-nav-group-bg: #fafafa;
+
+  --cui-sidebar-brand-bg: #d8dadc;
+  --cui-sidebar-footer-bg: #d8dadc;
+  --cui-sidebar-toggler-bg: #d8dadc;
+  --cui-sidebar-bg: #d8dadc;
+  //--cui-sidebar-brand-bg: #d8dadc;
+  --cui-sidebar-nav-link-padding-y: 0.3rem;
+
+}
+
+.sidebar-fixed {
+  box-shadow: 0 0 0 0;
+}
+
+// Add custom RTL styles for CoreUI components here
+
+.bg-light {
+
+  background-color: rgba(235, 237, 239, 1);
+}

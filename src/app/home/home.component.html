@@ -1,0 +1,35 @@
+
+<c-col [md]="12">
+  <ng-lottie
+    class="d-flex justify-content-center"
+    width="400px"
+    height="300px"
+    containerClass="moving-box "
+    [options]="options"
+    (animationCreated)="animationCreated($event)"
+
+  />
+  <div class="mining-container">
+
+    <div class="hash-rate text-white">{{ displayText }}</div>
+    <div class="multiplier text-white">x{{ multiplier.toFixed(1)  }} (gh/s)</div>
+  </div>
+  <div class="d-flex justify-content-center my-3">
+    <button cButton  color="primary" style="width: 150px;" class="  me-2 text-center">
+      <div class="d-flex justify-content-center align-items-center text-center">
+      <img cImg src="icons/claim.svg" height="24" width="24"/>
+      <span style=" font-size: 18px;" class="mx-2">Claim</span>
+      </div>
+    </button>
+
+    <button cButton  color="warning" style="width: 150px;" class="  me-2 text-center">
+      <div class="d-flex justify-content-center align-items-center text-center">
+      <img cImg src="icons/boost.svg" height="24" width="24"/>
+      <span style=" font-size: 18px;" class="mx-2">Claim</span>
+      </div>
+    </button>
+
+  </div>
+
+</c-col>
+
